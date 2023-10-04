@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="/e-commerce-website/script/script.js" defer></script>
+    
+
+    <link rel="stylesheet" href="/e-commerce-website/css/style.css" />
+
+    <style>
+      #file-input {
+        width: 100px;
+        color: transparent;
+      }
+    </style>
+
+    <title >Add-Product</title>
+  </head>
+  <body>
+    <div class="container my-5">
+      <div>
+        <h2 id="edit-title">Add Product</h2>
+      </div>
+
+      <form class="">
+        <input type="hidden" id="id" />
+        <div class="form-outline mb-4">
+          <input
+            type="name"
+            id="name"
+            class="form-control"
+            placeholder="Title"
+          />
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="Desc"
+            class="form-control"
+            placeholder="Description"
+          />
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="price"
+            class="form-control"
+            placeholder="Price"
+          />
+        </div>
+
+        <div class="form-outline mb-4">
+          <input
+            type="text"
+            id="img-input"
+            class="form-control"
+            placeholder="Image Link"
+          />
+        </div>
+
+        
+
+        <button type="submit" id="btn" class="btn btn-success btn-block mb-4" onclick="productupdate()">
+          Add Product
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

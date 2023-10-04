@@ -1,0 +1,32 @@
+.navbar-collapse {
+  justify-content: center;
+}
+.navbar-brand .logo {
+  width: 10vw;
+  height: 15vh;
+
+}
+
+.linear {
+  background-image: linear-gradient(to right, rgba(83, 85, 85, 0.219), rgb(207,244,252)); 
+  height: auto;
+}
+
+.linear a {
+  text-decoration: none;
+}
+
+.prod img {
+  height: 55vh;
+}
+
+
+
+.c1 {
+  margin-left: 80px;
+  padding-top: 30px;
+  
+}
+
+
+
