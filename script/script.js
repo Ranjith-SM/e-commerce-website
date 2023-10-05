@@ -1,8 +1,10 @@
 const userlogout = () => {
+  sessionStorage.removeItem("personId");
   location.replace("/e-commerce-website/login.html");
 };
 
 const adminlogout = () => {
+  sessionStorage.removeItem("personId");
   location.replace("/e-commerce-website/login.html");
 };
 
@@ -568,6 +570,7 @@ const OrderAdminPage = () => {
 const usershow = () => {
   let guest = document.getElementById("Guest");
   let user = document.getElementById("user");
+  let btn = document.getElementById("guestbtn");
 
   let persons = JSON.parse(localStorage.getItem("person"));
   let personId = parseInt(sessionStorage.getItem("personId"));
@@ -578,8 +581,10 @@ const usershow = () => {
   if (sessionStorage.getItem("personId")) {
     user.classList.remove("visually-hidden");
     guest.classList.add("visually-hidden");
+    btn.classList.add("visually-hidden");
   } else {
     guest.classList.add("visually-hidden");
     user.classList.remove("visually-hidden");
+    
   }
 };

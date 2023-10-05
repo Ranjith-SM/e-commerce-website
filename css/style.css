@@ -7,11 +7,6 @@
 
 }
 
-.linear {
-  background-image: linear-gradient(to right, rgba(83, 85, 85, 0.219), rgb(207,244,252)); 
-  height: auto;
-}
-
 .linear a {
   text-decoration: none;
 }
@@ -28,5 +23,8 @@
   
 }
 
+body {
+  background-image: linear-gradient(to bottom right, rgba(255, 0, 140, 0.219), rgb(71, 221, 255));
+}
 
 
